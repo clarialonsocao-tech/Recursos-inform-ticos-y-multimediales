@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Cormorant Garamond' ;
+    src: url('CormorantGaramond-Italic-VariableFont_wght.ttf');}
+ 
+    
+@font-face { 
+    font-family: 'Abril Fatface' ;
+    src: url('AbrilFatface-Regular.ttf');}
+
+*{ 
+ body {
+    font-family: 'Cormorant Garamond'; 
+    color: white}   
+
+
+.logo img{
+    width: 40%; 
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;}
+
+body { 
+  background-color:
+      white}
+ 
+.Start{ 
+    font-family: 'Cormorant Garamond';
+    color: #EB007D;}
+
+
+
+.Login {
+    font-family: 'Cormorant Garamond';
+    color: black;
+    position: absolute;
+    top: 400px;
+    right: 40px;}
+
+.CuadradoRosa{
+    background: #EB007D;
+    min-height: 100vh;
+    margin: 50px;
+    
+}
+
+
+.Imagen1 {
+    object-fit: contain;
+    margin: 45px;
+    height: 600px;
+    width: 350px;
+    display: inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;}
+
+.Parrafo {
+    font-family: 'Cormorant Garamond';
+    color: black;
+    position: relative;
+    left: 4%;
+    margin-top: 50px;
+    max-height: fit-content;}
+
+}
+
+/* TABLET - 768px*/
+
+@media (max-width: 768px)  {
+    .logo img {
+        width: 60%;}
+
+    .CuadradoRosa {
+        margin: 30px;}
+
+    .Imagen1 {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;}
+
+    .Login {
+        top: 250px;
+        right: 25px;}
+
+    .Parrafo {
+        left: 0;
+        margin: 30px;}
+    
+}
+
+
+/* CELULAR - 480px */
+
+@media (max-width: 480px) {
+    .logo img { 
+        width: 80%;}
+    
+    .CuadradoRosa { 
+        margin: 15px;}
+
+    .Imagen1 {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;}
+
+    .Login {
+        position: static;
+        text-align: right;
+        margin: 20px;}
+
+    .Parrafo {
+        left: 0;
+        margin: 20px;}
+
+}
+ 
+
