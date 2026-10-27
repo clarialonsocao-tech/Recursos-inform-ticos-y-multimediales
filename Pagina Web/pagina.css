@@ -1,0 +1,1052 @@
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Abril Fatface' ;
+    src: url('AbrilFatface-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F9F2EC;
+    color: #171414;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-bottom: 1px solid #D8C9C2;
+    gap: 30px;
+}
+
+.Logo {
+    width: 190px;
+    flex-shrink: 0;
+}
+
+.Logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.Menu a {
+    color: #171414;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.Menu a:hover,
+.Menu a.Activo {
+    color: #EB007D;
+    border-bottom: 2px solid #EB007D;
+}
+
+.Portada {
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    margin: 12px;
+    background-color: #EB007D;
+}
+
+
+.ImagenPortada {
+    width: 65%;
+    height: 650px;
+}
+
+.ImagenPortada img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TextoPortada {
+    width: 35%;
+    padding: 35px;
+    text-align: center;
+}
+
+.TextoPortada h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.TextoPortada p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 1.3;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.Boton {
+    display: inline-block;
+    background-color: white;
+    color:#EB007D;
+    border: 1px solid white;
+    padding: 13px 24px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.Boton:hover {
+    background-color: #EB007D;
+    color: white;
+}
+
+.Footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    
+.Header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+.Logo {
+    width: 180px;
+}
+
+.Menu {
+    justify-content: center;
+    gap: 18px;
+}
+
+.Portada {
+    flex-direction: column;
+}
+
+.ImagenPortada {
+    width: 100%;
+    height: 450px;
+}
+
+.TextoPortada {
+    width: 100%;
+    padding: 30px;
+}
+
+.TextoPortada h1 {
+    font-size: 36px;
+}
+
+.TextoPortada p {
+    font-size: 28px;
+}
+
+} 
+
+@media (max-width: 480px) {
+
+.Header {
+    padding: 15px;
+}
+
+.Logo {
+    width: 155px;
+}
+
+.Menu {
+    gap: 12px;
+}
+
+.Menu a {
+    font-size: 10px;
+}
+
+.Portada {
+    margin: 8px;
+}
+
+.ImagenPortada {
+    height: 350px;
+}
+
+.TextoPortada {
+    padding: 25px 18px;
+}
+
+.TextoPortada h1 {
+    font-size: 30px;
+}
+
+.TextoPortada p {
+    font-size: 24px;
+}
+
+.Boton {
+    padding: 12px 18px;
+}
+
+}
+
+.TheGirls {
+    background-color: #EB007D;
+    margin: 12px;
+    padding: 40px 30px;
+    min-height: 650px;
+}
+
+.TheGirls h1 {
+    font-family: 'Abril Fatface', serif;
+    color: white;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.Intro {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.GirlsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Girl {
+    width: calc(25% - 19px);
+    text-align: center;
+    color: white;
+}
+
+.Girl img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 15px;
+}
+
+.Girl h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.Girl .Rol {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    margin: 5px 0 12px;
+}
+
+.Girl .Descripcion {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+
+.Girl .Boton {
+    display: inline-block;
+    background-color: white;
+    color:#EB007D; 
+    border: 1px solid white;
+    padding: 13px 18px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.Girl .Boton:hover {
+    background-color: #171414;
+    color: white;
+    border-color: #171414;
+}
+
+@media (max-width: 768px) {
+    .TheGirls {
+        padding: 30px 20px;
+    }
+    .TheGirls h1 {
+        font-size: 42px;
+    }
+    .Intro {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .GirlsContainer {
+        gap: 30px 20px;
+    }
+    .Girl {
+        width: calc(50% - 10px);
+    }
+    .Girl img {
+        height: 300px
+    }
+}
+
+@media (max-width: 480px) {
+    .TheGirls {
+        margin: 8px;
+        padding: 25px 18px;
+    }
+    .TheGirls h1 {
+        font-size: 35px;
+    }
+    .Intro {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .GirlsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    .Girl {
+        width: 100%;
+        max-width: 320px;
+    }
+    .Girl img {
+        height: 350px;
+    }
+    .Girl h2 {
+        font-size: 23px;
+    }
+    .Girl .Descripcion {
+        font-size: 19px;
+    }
+}
+
+.TheLooks {
+    background-color: #EB007D;
+    margin: 12px;
+    padding: 40px 30px;
+    min-height: 650px;
+}
+
+.TheLooks h1 {
+    font-family: 'Abril Fatface', serif;
+    color: white;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.IntroLooks {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.LooksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Look {
+    width: calc(25% - 19px);
+    text-align: center;
+    color: white;
+}
+
+.Look img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 15px;
+}
+
+.Look h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.NombreLook {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    margin: 5px 0 12px;
+}
+
+.DescripcionLook {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+
+.Look .Boton {
+    display: inline-block;
+    background-color: white;
+    color: #EB007D;
+    border: 1px solid white;
+    padding: 13px 18px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.Look .Boton:hover {
+    background-color: #171414;
+    color: white;
+    border-color: #171414;
+}
+
+.MasLooks {
+    margin-top: 25px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fff7f3;
+    color: #333;
+    display: block;
+    flex-direction: column;
+}
+
+.MasLooks h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.GaleriaLooks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.GaleriaLooks img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+.MasLooks p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .TheLooks {
+        padding: 30px 20px;
+    }
+    .TheLooks h1 {
+        font-size: 42px;
+    }
+    .IntroLooks {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .LooksContainer {
+        gap: 30px 20px;
+    }
+    .Look {
+        width: calc(50% - 10px);
+    }
+    .Look img {
+        height: 300px;
+    }
+    .MasLooks {
+        padding: 12px;
+    }
+    .GaleriaLooks img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TheLooks {
+        margin: 8px;
+        padding: 25px 18px;
+    }
+    .TheLooks h1 {
+        font-size: 35px;
+    }
+    .IntroLooks {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .LooksContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    .Look {
+        width: 100%;
+        max-width: 320px;
+    }
+    .Look img {
+        height: 350px;
+    }
+    .Look h2 {
+        font-size: 23px;
+    }
+    .DescripcionLook {
+        font-size: 19px;
+    }
+    .MasLooks {
+        padding: 10px;
+    }
+    .MasLooks h3 {
+        font-size: 17px;
+    }
+    .GaleriaLooks img {
+        height: 220px;
+    }
+    .MasLooks p {
+        font-size: 14px;
+    }
+}
+
+.ThePlaces {
+    background-color: #F9F2EC;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.ThePlaces h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 55px;
+    color:#EB007D;
+    margin-bottom: 15px;
+}
+
+.IntroPlaces {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #333; 
+    margin-bottom: 45px;
+}
+
+.PlacesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.Place {
+    text-align: center;
+}
+
+.Place img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.Place h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 27px;
+    color: #EB007D;
+    margin: 10px 0;
+}
+
+.NombrePlace {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.DescripcionPlace {
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 450px;
+    margin: 0 auto 20px;
+}
+
+.Place .Boton {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .ThePlaces {
+        padding: 35px 5%;
+    }
+    .ThePlaces h1 {
+        font-size: 42px;
+    }
+    .IntroPlaces {
+        font-size: 20px;
+    }
+    .PlacesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+    .Place img {
+        height: 260px;
+    }
+    .Place h2 {
+        font-size: 23px;
+    }
+    .DescripcionPlace {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ThePlaces {
+        padding: 30px 7%;
+    }
+    .ThePlaces h1 {
+        font-size: 36px;
+    }
+    .IntroPlaces {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .PlacesContainer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .Place img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+    .Place h2 {
+        font-size: 25px;
+    }
+    .NombrePlace {
+        font-size: 17px;
+    }
+    .DescripcionPlace {
+        font-size: 18px;
+    }
+}
+
+.NYC {
+    background-color: #F9F2EC;
+    padding: 50px 8%;
+}
+
+.NYCIntro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.NYCIntro h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 60px;
+    color:#EB007D;
+    margin: 0 0 15px;
+}
+
+.NYCIntro p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    color: #333;
+    margin: 0 auto;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+.NYCFeature {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 65px;
+}
+
+.NYCFeature img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.NYCFeatureText {
+    padding: 10px;
+}
+
+.NYCEyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #EB007D;
+    margin-bottom: 15px;
+}
+
+.NYCFeatureText h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 35px;
+    color: #EB007D;
+    margin: 0 0 20px;
+}
+
+.NYCFeatureText > p:last-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.NYCGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.NYCCard {
+    text-align: center;
+}
+
+.NYCCard img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.NYCCard h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 24px;
+    color:#EB007D;
+    margin: 10px 0;
+}
+
+.NYCCard p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .NYC {
+        padding: 40px 5%;
+    }
+    .NYCIntro h1 {
+        font-size: 46px;
+    }
+    .NYCIntro p {
+        font-size: 21px;
+    }
+    .NYCFeature {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 45px;
+    }
+    .NYCFeature img {
+        height: 380px;
+    }
+    .NYCFeatureText {
+        text-align: center;
+    }
+    .NYCFeatureText h2 {
+        font-size: 30px;
+    }
+    .NYCFeatureText > p:last-child {
+        font-size: 19px;
+    }
+    .NYCGallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+    .NYCCard img {
+        height: 260px;
+    }
+    .NYCCard h2 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .NYC {
+        padding: 30px 7%;
+    }
+    .NYCIntro {
+        margin-bottom: 35px;
+    }
+    .NYCIntro h1 {
+        font-size: 36px;
+    }
+    .NYCIntro p {
+        font-size: 19px;
+    }
+    .NYCFeature {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .NYCFeature img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+    .NYCFeatureText {
+        padding: 0;
+    }
+    .NYCEyebrow {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .NYCFeatureText h2 {
+        font-size: 27px;
+    }
+    .NYCFeatureText > p:last-child {
+        font-size: 19px;
+    }
+    .NYCGallery {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .NYCCard img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+    .NYCCard h2 {
+        font-size: 24px;
+    }
+    .NYCCard p {
+        font-size: 18px;
+    }
+}
+
+.QuizPage {
+    background-color: #F9F2EC;
+    padding: 60px 10%;
+    color: #333;
+}
+
+.QuizIntro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.QuizEyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #EB007D;
+    text-transform: uppercase;
+}
+
+.QuizIntro h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 48px;
+    color: #EB007D;
+    margin: 20px 0;
+}
+
+.QuizIntro P {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.QuizQuestion {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    padding: 25px;
+    border-bottom: 1px solid #EB007D;
+}
+
+.QuizQuestion h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.QuizQuestion label {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.QuizQuestion input[type="radio"] {
+    accent-color: #EB007D;
+    margin-right: 10px;
+}
+
+.QuizButton {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 35px;
+    background-color: #EB007D;
+    color: white;
+    border: 1px solid #EB007D;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.QuizButton:hover {
+    background-color: transparent;
+    color: #EB007D;
+}
+
+.QuizResult {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #EB007D;
+    background-color: white;
+}
+
+.QuizResult h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #EB007D;
+}
+
+.QuizResult img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 25px auto;
+
+}
+
+.QuizResult p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .QuizPage {
+        padding: 45px 6%;
+    }
+    .QuizIntro h1 {
+        font-size: 36px;
+    }
+    .QuizQuestion {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .QuizPage {
+        padding: 35px 5%;
+    }
+    .QuizIntro h1 {
+        font-size: 30px;
+    }
+    .QuizIntro p {
+        font-size: 19px;
+    }
+    .QuizQuestion h2 {
+        font-size: 22px;
+    }
+    .QuizQuestion label {
+        font-size: 18px;
+    }
+    .QuizResult {
+        padding: 20px;
+    }
+    .QuizResult h2 {
+        font-size: 27px;
+    }
+}
+.MasLooks[hidden] {
+    display: none !important;
+}
+
+.DireccionPlace {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff7f3;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.DireccionPlace p {
+    margin-bottom: 10px;
+}
+
+.DireccionPlace a {
+    color: #ff007f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.DireccionPlace a:hover {
+    text-decoration: underline;
+}
+
+.DireccionPlace[hidden] {
+    display: none !important;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sex and the City | Places</title>
+        <link rel="stylesheet" href="pagina.css">
+    </head>
+
+<body>
+
+    <header class="Header">
+        <a href="pagina.html" class="Logo">
+            <img src="logo.png" alt="Sex and the City">
+        </a>
+
+    <nav class="Menu">
+        <a href="pagina.html">HOME</a>
+        <a href="thegirls.html">THE GIRLS</a>
+        <a href="thelooks.html">THE LOOKS</a>
+        <a href="places.html" class="Activo">PLACES</a>
+        <a href="nyc.html">NYC</a>
+        <a href="quiz.html">QUIZ</a>
+    </nav>
+    </header>
+
+<main class="ThePlaces">
+    <h1>PLACES</h1>
+    <p class="IntroPlaces">
+        The city is part of the story. 
+        Discover the places that made New York unforgettable.
+    </p>
+
+<section class="PlacesContainer">
+
+    <article class="Place">
+        <img src="magnolia.bakery.jpg" alt="Magnolia Bakery">
+
+        <h2>MAGNOLIA BAKERY</h2>
+
+        <p class="NombrePlace">SWEET MOMENTS</p>
+        <p class="DescripcionPlace">
+            A New York bakery famous for its cupcakes and its connection to the world of Carrie Bradshaw.
+        </p>
+        <a href="#direccion-magnolia" class="Boton" onclick="mostrarDireccion(event,'direccion-magnolia', this)">DISCOVER MORE</a>
+        <div id="direccion-magnolia" class="DireccionPlace" hidden>
+            <p><strong>ADRESS:</strong> 401 Bleecker Street, New York, NY.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Magnolia+Bakery+401+Bleecker+Street+New+York"
+            target="_blank" rel="noopener noreferrer">VIEW ON GOOGLE MAPS</a>
+        </div>
+    </article>
+
+<article class="Place">
+    <img src="carrie's.apartement.jpg" alt="Carrie's apartment">
+
+    <h2>CARRIE'S APARTMENT</h2>
+
+    <p class="NombrePlace">THE ICONIC STOOP</p>
+    <p class="DescripcionPlace">
+        The iconic exterior staircase that became one of the most recognizable locations in the series.
+    </p>
+    <a href="#direccion-carrie" class="Boton" onclick="mostrarDireccion(event, 'direccion-carrie', this)">DISCOVER MORE</a>
+
+    <div id="direccion-carrie" class="DireccionPlace" hidden>
+        <p><strong>ADRESS:</strong> 66 Perry Street, New York, NY.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=66+Perry+Street+New+York" target="_blank" rel="noopener noreferrer">VIEW ON GOOGLE MAPS</a>
+    </div>
+</article>
+
+<article class="Place">
+    <img src="restaurant.webp" alt="The Loeb Boathouse in Central Park">
+
+    <h2>LOEB BOATHOUSE</h2>
+
+    <p class="NombrePlace">A ROMANTIC ESCAPE</p>
+    <p class="DescripcionPlace">
+        A lakeside restaurant in Central Park, where Carrie and Big's lunch date takes an unexpected turn when they both fall into the water.
+    </p>
+    <a href="#direccion-loeb" class="Boton" onclick="mostrarDireccion(event,'direccion-loeb',this)">DISCOVER MORE</a>
+
+    <div id="direccion-loeb" class="DireccionPlace" hidden>
+        <p><strong>ADRESS:</strong> Central Park, East 72nd Street, New York, NY.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Loeb+Boathouse+Central+Park+New+York" target="_blank"
+        rel="noopener noreferrer">VIEW ON GOOGLE MAPS</a>
+    </div>
+</article>
+
+<article class="Place">
+    <img src="hotel.plaza.jpeg" alt="The Plaza Hotel in New York">
+
+    <h2>THE PLAZA HOTEL</h2>
+
+    <p class="NombrePlace">YOUR GIRL IS LOVELY, HUBBELL</p>
+    <p class="DescripcionPlace">
+        The well-known hotel where Carrie encounters Big after his engagement pary to Natasha, leading to one of the serie's most memorable moments.
+    </p>
+    <a href="#direccion-plaza" class="Boton" onclick="mostrarDireccion(event,'direccion-plaza',this)">DISCOVER MORE</a>
+
+    <div id="direccion-plaza" class="DireccionPlace" hidden>
+        <p><strong>ADRESS:</strong> 768 Fifth Avenue, New York, NY.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=The+Plaza+Hotel+768+Fifth+Avenue+New+York" target="_blank"
+        rel="noopener noreferrer">VIEW ON GOOGLE MAPS</a>
+    </div>
+</article>
+
+</section>
+</main>
+
+<footer class="Footer">
+    <p>SEX AND THE CITY - FOUR WOMEN, ONE FRIENDSHIP</p>
+</footer>
+
+<script>
+    function mostrarDireccion(event, id, boton) {
+        event.preventDefault();
+        const direccion = document.getElementById(id);
+
+        if (direccion.hidden) {
+            direccion.hidden = false;
+            boton.textContent = "SHOW LESS"
+        } else {
+            direccion.hidden = true;
+            boton.textContent = "DISCOVER MORE"
+        }
+    }
+</script>
+</body>
+</html>
