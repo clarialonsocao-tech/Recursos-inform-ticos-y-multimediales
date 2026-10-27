@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sex and the City | The Looks</title>
+
+<link rel="stylesheet" href="pagina.css">
+</head>
+
+<body>
+
+    <header class="Header">
+        <a href="pagina.html" class="Logo">
+            <img src="logo.png" alt="Sex and the City">
+        </a>
+
+    <nav class="Menu">
+        <a href="pagina.html">HOME</a>
+        <a href="thegirls.html">THE GIRLS</a>
+        <a href="thelooks.html" class="Activo">THE LOOKS</a>
+        <a href="places.html">PLACES</a>
+        <a href="nyc.html">NYC</a>
+        <a href="quiz.html">QUIZ</a>
+    </nav>
+    </header>
+
+<main class="TheLooks">
+    <h1>THE LOOKS</h1>
+    <p class="IntroLooks">
+        Fashion is more than clothes. It's an attitude, a statement and a way of life.
+    </p>
+
+<section class="LooksContainer">
+
+    <article class="Look">
+        <img src="carrie.look.jpg" alt="Look de Carrie Bradshaw">
+        <h2>CARRIE BRADSHAW</h2>
+        <p class="NombreLook">THE FASHION ICON</p>
+        <p class="DescripcionLook">
+            Bold cominations, statement pieces and unexpected details that make every outfit unforgettable.
+            </p>
+        <a href="#looks-carrie" class="Boton"
+        onclick="mostrarLooks(event, 'looks-carrie', this)">
+        DISCOVER MORE
+    </a>
+
+    <div id="looks-carrie" class="MasLooks" hidden>
+
+        <h3>CARRIE'S ICONIC STYLE</h3>
+
+    <div class="GaleriaLooks">
+        <img src="CARRIE.jpg" alt="Carrie Bradshaw outfit">
+        <img src="look2.carrie.jpg" alt="Carrie's style">
+        <img src="look3.carrie.jpg" alt="Carrie Bradshaw style">
+    </div>
+
+    <p>
+        From statement dresses to unexpected combinations, Carrie turns fashion into a form of self-expression.
+    </p>
+    </div>
+    </article>
+
+    <article class="Look">
+        <img src="samantha.look.avif" alt="Look de Samantha Jones">
+        <h2>SAMANTHA JONES</h2>
+        <p class="NombreLook">THE BOLD STYLE</p>
+        <p class="DescripcionLook">
+            Confident silhouettes, striking colors and a style that never goes unnoticed.
+        </p>
+        <a href="#looks-samantha" class="Boton"
+        onclick="mostrarLooks(event, 'looks-samantha', this)">
+        DISCOVER MORE
+    </a>
+
+    <div id="looks-samantha" class="MasLooks" hidden>
+        <h3>SAMANTHA'S GLAMOUR</h3>
+
+        <div class="GaleriaLooks">
+            <img src="look.samantha.jpg" alt="Samantha Jones outfit">
+            <img src="look2.samantha.jpg" alt="Samantha's fashion style">
+            <img src="look3.samantha.jpg" alt="Samantha Jones look">
+        </div>
+
+        <p>
+            Samantha embraces glamorous outfits, bold colors and confident silhouettes that express her personality.
+        </p>
+    </div>
+    </article>
+
+    <article class="Look">
+        <img src="charlotte.look.jpg" alt="Look de Charlotte York">
+        <h2>CHARLOTTE YORK</h2>
+        <p class="NombreLook">THE CLASSIC LOOK</p>
+        <p class="DescripcionLook">
+            Feminine dresses, delicate details and timeless elegance inspired by classic fashion.
+        </p>
+        <a href="#looks-charlotte" class="Boton"
+        onclick="mostrarLooks(event,'looks-charlotte', this)">
+        DISCOVER MORE
+    </a>
+
+    <div id="looks-charlotte" class="MasLooks" hidden>
+        <h3>CHARLOTTE'S ELEGANCE</h3>
+
+        <div class="GaleriaLooks">
+            <img src="look.charlotte.jpg" alt="Charlotte York outfit">
+            <img src="look2.charlotte.webp" alt="Charlotte's look">
+            <img src="charlotte3.jpg" alt="Charlotte York style">
+        </div>
+
+        <p>
+            Charlotte's style combines feminine dresses, delicate accessories and timeless elegance.
+        </p>
+    </div>
+    </article>
+
+    <article class="Look">
+        <img src="miranda.look.jpg" alt="Look de Miranda Hobbes">
+        <h2>MIRANDA HOBBES</h2>
+        <p class="NombreLook">THE POWER DRESSING</p>
+        <p class="DescripcionLook">
+            Tailored pieces, structured silhouettes and sophisticated outfits with a modern attitude.
+        </p>
+
+        <a href="#looks-miranda" class="Boton"
+        onclick="mostrarLooks(event, 'looks-miranda', this)">
+        DISCOVER MORE
+    </a>
+
+    <div id="looks-miranda" class="MasLooks" hidden>
+        <h3>MIRANDA'S POWER DRESSING</h3>
+
+        <div class="GaleriaLooks">
+            <img src="look.miranda.avif" alt="Miranda Hobbes outfit">
+            <img src="look2.miranda.jpg" alt="Miranda's style">
+            <img src="Miranda.jpg" alt="Miranda Hobbes fashion">
+        </div>
+
+        <p>
+            Elegant and sophisticated looks with structured pieces that reflect her confident personality.
+        </p>
+    </div>
+    </article>
+</section>
+</main>
+
+<footer class="Footer">
+    <p>SEX AND THE CITY - FOUR WOMEN, ONE FRIENDSHIP</p>
+</footer>
+
+<script>
+    function mostrarLooks(event, id, boton) {
+        event.preventDefault();
+        const galeria = document.getElementById(id);
+
+        if (galeria.hidden) {
+            galeria.hidden = false;
+            boton.textContent = "SHOW LESS";
+        } else {
+            galeria.hidden = true;
+            boton.textContent = "DISCOVER MORE";
+        }
+    }
+</script>
+</body>
+</html>
